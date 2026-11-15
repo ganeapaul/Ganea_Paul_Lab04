@@ -22,20 +22,20 @@ def afiseaza_perechi_goldbach(numar):
             gasit = True
 
     if not gasit:
-        print("Nu s-au gasit perechi de numere prime.")
+        print("Nu s-au găsit perechi de numere prime.")
 
 
 def main():
-    text = input("Introdu un numar natural par mai mare decat 2: ")
+    text = input("Introdu un număr natural par mai mare decat 2: ")
 
     try:
         numar = int(text)
     except ValueError:
-        print("Eroare: trebuie sa introduci un numar intreg.")
+        print("Eroare: trebuie să introduci un numar intreg.")
         return
 
     if numar <= 2 or numar % 2 != 0:
-        print("Eroare: numarul trebuie sa fie par si mai mare decat 2.")
+        print("Eroare: numărul trebuie să fie par și mai mare decat 2.")
         return
 
     print(f"Perechile Goldbach pentru {numar}:")
